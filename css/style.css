@@ -1,0 +1,176 @@
+/* --- Reset Básico e Estilos Globais --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; /* Adicione a fonte Raleway ao seu projeto se ainda não o fez */
+    color: white;
+    background-color: #040404; /* Cor de fundo base */
+}
+
+h1, h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+p {
+    color: white;
+    line-height: 1.5; /* Melhora a legibilidade */
+}
+
+/* --- Estilos do Banner (Cabeçalho) --- */
+.banner {
+    background-image: linear-gradient(rgba(4, 4, 4, 0.8), rgba(16, 39, 53, 0.8)), url('../assets/images/banner.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center;
+    text-align: center;
+    padding: 50px 20px; /* Espaçamento interno */
+}
+
+.banner-content .logo img {
+    width: 650px; /* Tamanho razoável para o logo */
+    margin-bottom: 20px; /* Espaço abaixo do logo */
+}
+
+.banner h1 {
+    font-size: 2.5rem; /* Tamanho da fonte responsivo */
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    -webkit-background-clip: text; /* Efeito de gradiente no texto */
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.1rem;
+    max-width: 600px; /* Limita a largura do parágrafo para melhor leitura */
+    margin: 0 auto 30px auto; /* Centraliza o parágrafo */
+}
+
+.banner button {
+    background-color: transparent;
+    border: 2px solid;
+    border-image: linear-gradient(#3BA1CD, #1572B7) 1;
+    color: #33A8DB;
+    padding: 15px 30px;
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.banner button:hover {
+    background: linear-gradient(#3BA1CD, #1572B7);
+    color: white;
+}
+
+/* --- Estilos do Conteúdo Principal (Main) --- */
+main section {
+    padding: 80px 20px; /* Espaçamento padrão para todas as seções */
+    text-align: center;
+    max-width: 900px; /* Limita a largura do conteúdo para melhor leitura */
+    margin: 0 auto; /* Centraliza as seções */
+}
+
+#course-content h2 {
+    color: #33A8DB;
+    margin-bottom: 20px;
+}
+
+.modules-list {
+    margin-top: 40px;
+}
+
+.module {
+    border: 1px solid #33A8DB;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+.module span {
+    color: #33A8DB;
+    font-weight: bold;
+}
+
+/* --- Seção "Transforme o Mundo" --- */
+#transform-world {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/images/woman-code.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efeito parallax */
+    padding: 120px 20px;
+    max-width: 1000px; /* Ocupa a largura total */
+}
+
+#transforme-mundo { /* Estilizando o <p> dentro da seção */
+    position: absolute;
+    top: 50%;
+    right: 80%;
+    transform: translate(-50%);
+    z-index: 2;
+    grid-column: 1;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-shadow: 3px 2px 0px #33A8DB;
+    text-align: left;
+    font-size: 2.5rem;
+  font-weight: 900;
+  text-shadow: 3px 2px 0px #33A8DB;
+} 
+#transform-world {
+width: 90rem;
+height: 30rem;
+background-size: cover;
+background-image: url("../assets/images/woman-code.png");
+/* background-attachment: fixed; */
+border-top: 1px solid #33a8db80;
+border-bottom: 1px solid #33a8db80;
+padding: 200px;
+}
+/* #img-transforme-mundo{
+    display: block;
+    grid-column: 2;
+        width: 100%;
+        max-height: 25rem;
+        border-radius: 10px;
+        background-size: contain;
+} */
+/* --- Seção "Desafios Profissionais" --- */
+#professional-challenges h2 {
+    color: #33A8DB;
+    margin-bottom: 30px;
+}
+
+#professional-challenges img {
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* --- Estilos do Rodapé (Footer) --- */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #33A8DB;
+}
+
+footer .dio-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #33A8DB;
+    text-decoration: none;
+    font-weight: bold;
+}
